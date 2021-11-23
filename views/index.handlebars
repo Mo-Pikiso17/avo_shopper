@@ -1,1 +1,61 @@
-<h2>Best deals</h2>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    {{!--
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> --}}
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="navigation">
+        <!-- navigation -->
+        <nav>
+            <!-- logo -->
+            <a href="#" class="logo">Avo Shopper</a>
+
+            <ul>
+                <li><a href="#text-container" class="active">Home</a></li>
+                <li><a href="/shopList">Shops</a></li>
+            </ul>
+
+        </nav>
+
+
+
+        <div class="container">
+
+            <h1 style="margin: auto;padding:25px; margin-top:10px;">The Avo Best deals!</h1>
+
+            <div class="items" style="display: flex;">
+                {{#each listFive}}
+                <div>
+
+                    <h3>{{this.shop_name}}</h3>
+
+                    <img src="/css/avo.jpeg" alt="">
+
+                    <p>{{this.qty}} </p>
+
+                    <p>for </p>
+
+                    <p>{{this.price}}</p>
+                </div>
+                {{/each}}
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+</body>
+
+</html>

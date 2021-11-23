@@ -1,0 +1,23 @@
+<div class="container">
+
+    <div style="margin-right:650px;">
+        <a href="/"><button>HOME</button></a>
+    </div>
+
+    <h1>Shops</h1>
+    <br>
+    <br>
+    <table style="margin: auto; margin-top:20px;font-size: 20px;">
+        {{#each shopList}}
+
+        <tr>
+            {{!-- show deals for a specific shop --}}
+            <td><a href="/showDeals/{{this.name}}">{{this.name}}</a></td>
+        </tr>
+        {{/each}}
+    </table>
+    <br>
+
+    <a href="/addShop"><button>Add shop</button></a>
+
+</div>

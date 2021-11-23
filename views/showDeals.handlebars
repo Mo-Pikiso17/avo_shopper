@@ -1,0 +1,16 @@
+<div class="container">
+
+    <div style="margin-right:650px;">
+        <a href="/shopList"><button>BACK</button></a>
+    </div>
+
+    <h1> Deals for {{shop}} </h1>
+    <br>
+    <br>
+    {{#each getData}}
+    <img src="/css/avo.jpeg" alt="">
+    <p>Quantity: {{this.qty}}</p>
+    <p>Price: {{this.price}}</p>
+    {{/each}}
+
+</div>
